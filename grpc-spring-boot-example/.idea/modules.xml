@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/grpc-spring-boot-example/greeting-common/greeting-common.iml" filepath="$PROJECT_DIR$/grpc-spring-boot-example/greeting-common/greeting-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-spring-boot-example/greeting-parent.iml" filepath="$PROJECT_DIR$/grpc-spring-boot-example/greeting-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-spring-boot-example/greeting-service/grpc-spring-boot-example.iml" filepath="$PROJECT_DIR$/grpc-spring-boot-example/greeting-service/grpc-spring-boot-example.iml" />
+    </modules>
+  </component>
+</project>

@@ -28,8 +28,7 @@ public class PersonAddressService {
     private AddressMapper addressMapper;
 
     public PersonResponse createPerson(Person person) {
-        Addre
-        ssEntity addressEntity = new AddressEntity();
+        AddressEntity addressEntity = new AddressEntity();
         addressEntity = addressMapper.addressToAddressEntity(person.getAddress());
 
         PersonEntity personEntity;
@@ -39,6 +38,8 @@ public class PersonAddressService {
 
         PersonResponse personResponse = new PersonResponse();
         personResponse.setId(personEntity.getId());
+        log.info("Person created" +
+                "");
         return personResponse;
     }
 
@@ -53,11 +54,14 @@ public class PersonAddressService {
             address = addressMapper.addressEntityToAddress(addressEntity);
             person.setAddress(address);
         }
+        log.info("person");
         return person;
     }
 
     public void deletePerson(Long id) {
+
         personRepository.deleteById(id);
+        log.info("Id deleted");
     }
 
 
@@ -77,6 +81,7 @@ public class PersonAddressService {
 
             personEntity.setAddressEntity(addressEntity);
             personRepository.save(personEntityOptional.get());
+            log.info("Updated Succesfully");
         }
     }
 }
