@@ -27,7 +27,8 @@ public class UserService {
         UserEntity user = new UserEntity();
         user.setName("user" + new Random().nextInt(374483));
         userRepository.save(user);
-        log.info("add service call in " + new Date().toString());
+        log.
+                info("add service call in " + new Date().toString());
     }
 
     @Scheduled(cron = "${corn.expression.value}")
